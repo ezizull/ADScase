@@ -11,6 +11,20 @@ class FontTheme {
     fontFamily: 'Quicksand',
   );
 
+  /* INPUT */
+  static TextStyle text = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: ColorTheme.black,
+    fontFamily: 'Quicksand',
+  );
+  static TextStyle placeholder = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: ColorTheme.dark_silver,
+    fontFamily: 'Quicksand',
+  );
+
   /* NOTIF */
   static TextStyle notif = TextStyle(
     fontSize: 8,

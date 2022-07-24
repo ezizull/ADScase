@@ -1,5 +1,5 @@
 // components
-import 'package:adscase/screens/components/navbar_button.dart';
+import 'package:adscase/screens/components/navbar/navbar_button.dart';
 // cubit
 import 'package:adscase/cubit/navbar/navbar_cubit.dart';
 import 'package:adscase/theme/avatar_theme.dart';

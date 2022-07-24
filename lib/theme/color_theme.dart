@@ -1,13 +1,19 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: non_constant_identifier_names
+
+import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 // color theme
 class ColorTheme {
+  /* Transparent Color */
+  static Color transparent = Colors.transparent;
+
   /* Grey Color */
+  static Color white = HexColor('ffffff');
   static Color black = HexColor('010101');
   static Color gray = HexColor('B7B7B8');
   static Color silver = HexColor('f3f3f4');
-  static Color white = HexColor('ffffff');
+  static Color dark_silver = HexColor('808080');
 
   /* Red Color */
   static Color red = HexColor('f45858');

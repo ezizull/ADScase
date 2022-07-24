@@ -2,7 +2,7 @@
 import 'package:adscase/cubit/navbar/navbar_cubit.dart';
 
 // dependencies
-import 'package:adscase/screens/components/navbar.dart';
+import 'package:adscase/screens/components/navbar/navbar.dart';
 import 'package:adscase/screens/detail_screen.dart';
 import 'package:adscase/screens/home_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
