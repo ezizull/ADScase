@@ -1,13 +1,13 @@
 // components
-import 'package:adscase/screens/components/navbar_btn.dart';
+import 'package:adscase/screens/components/navbar_button.dart';
 // cubit
 import 'package:adscase/cubit/navbar/navbar_cubit.dart';
+import 'package:adscase/theme/avatar_theme.dart';
 
 // dependencies
 import 'package:adscase/theme/color_theme.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:adscase/theme/icons_theme.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 
 class Navbar extends StatefulWidget {
@@ -38,8 +38,9 @@ class _NavbarState extends State<Navbar> {
                 spacing: swidth / 12,
                 direction: Axis.horizontal,
                 alignment: WrapAlignment.center,
+                crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
-                  NavbarBtn(
+                  NavbarButton(
                     state.index == 0
                         ? IconsTheme.home_fill
                         : IconsTheme.home_line,
@@ -47,7 +48,7 @@ class _NavbarState extends State<Navbar> {
                       context.read<NavbarCubit>().onchange(0);
                     },
                   ),
-                  NavbarBtn(
+                  NavbarButton(
                     state.index == 1
                         ? IconsTheme.heart_fill
                         : IconsTheme.heart_line,
@@ -55,25 +56,23 @@ class _NavbarState extends State<Navbar> {
                       context.read<NavbarCubit>().onchange(1);
                     },
                   ),
-                  NavbarBtn(
+                  NavbarButton(
                     state.index == 2
                         ? IconsTheme.cart_fill
                         : IconsTheme.cart_line,
+                    notif: 2,
                     onPressed: () {
                       context.read<NavbarCubit>().onchange(2);
                     },
                   ),
-                  IconButton(
-                    icon: SizedBox(
+                  GestureDetector(
+                    child: SizedBox(
                       height: sheight / 32,
-                      child: SvgPicture.asset(
-                        state.index == 3
-                            ? IconsTheme.star_fill
-                            : IconsTheme.star_line,
-                        color: ColorTheme.black,
+                      child: const CircleAvatar(
+                        backgroundImage: AssetImage(AvatarTheme.boy),
                       ),
                     ),
-                    onPressed: () {
+                    onTap: () {
                       context.read<NavbarCubit>().onchange(3);
                     },
                   ),

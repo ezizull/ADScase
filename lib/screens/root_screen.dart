@@ -1,5 +1,11 @@
+// cubit
+import 'package:adscase/cubit/navbar/navbar_cubit.dart';
+
+// dependencies
 import 'package:adscase/screens/components/navbar.dart';
+import 'package:adscase/screens/detail_screen.dart';
 import 'package:adscase/screens/home_screen.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:adscase/theme/color_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -12,19 +18,29 @@ class RootScreen extends StatefulWidget {
 }
 
 class _RootScreenState extends State<RootScreen> {
+  final screens = [
+    const HomeScreen(),
+    const DetailScreen(),
+    const HomeScreen(),
+    const DetailScreen(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorTheme.white,
-      body: Stack(
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [
-          const HomeScreen(),
-          const Positioned(
-            bottom: 0,
-            child: Navbar(),
-          ),
-        ],
+      body: BlocBuilder<NavbarCubit, NavbarState>(
+        builder: (context, state) {
+          return Stack(
+            children: [
+              screens[state.index],
+              const Positioned(
+                bottom: 0,
+                child: Navbar(),
+              ),
+            ],
+          );
+        },
       ),
     );
     ;

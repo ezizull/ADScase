@@ -13,16 +13,14 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
 
-  /* for routing */
+  /* for routing onGenerateRoute */
   final AppRouter _appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => NavbarCubit(),
-        ),
+        BlocProvider(create: (context) => NavbarCubit()),
       ],
       child: MaterialApp(
         theme: ThemeStyle.light,

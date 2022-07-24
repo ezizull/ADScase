@@ -10,11 +10,17 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
-    /*   double swidth = MediaQuery.of(context).size.width;
-    double sheight = MediaQuery.of(context).size.height; */
+    // double swidth = MediaQuery.of(context).size.width;
+    double sheight = MediaQuery.of(context).size.height;
 
     return ListView(
-      children: [],
+      children: [
+        Container(
+          height: sheight,
+          alignment: Alignment.center,
+          child: const Text("DetailScreen"),
+        ),
+      ],
     );
   }
 }
