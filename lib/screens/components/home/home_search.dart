@@ -19,7 +19,7 @@ class HomeSearch extends StatelessWidget {
           filled: true,
           hintText: ("Search clothes..."),
           hintStyle: FontTheme.placeholder,
-          fillColor: ColorTheme.silver,
+          fillColor: ColorTheme.ligth_silver,
           prefixIcon: Container(
               height: height! / 60,
               margin: EdgeInsets.zero,

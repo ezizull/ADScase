@@ -5,12 +5,7 @@ abstract class ProductEvent extends Equatable {
   const ProductEvent();
 }
 
-class LoadEvent extends ProductEvent {
-  @override
-  List<Object?> get props => [];
-}
-
-class PullToRefreshEvent extends ProductEvent {
+class LoadProductEvent extends ProductEvent {
   @override
   List<Object?> get props => [];
 }

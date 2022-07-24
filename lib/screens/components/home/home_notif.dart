@@ -46,7 +46,7 @@ class HomeNotif extends StatelessWidget {
         ),
       ),
       decoration: BoxDecoration(
-        color: ColorTheme.silver,
+        color: ColorTheme.ligth_silver,
         borderRadius: BorderRadius.circular(10),
       ),
     );

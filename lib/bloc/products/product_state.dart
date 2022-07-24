@@ -9,22 +9,22 @@ class ProductInitial extends ProductState {
   List<Object?> get props => [];
 }
 
-class LoadingState extends ProductState {
+class LoadingProductState extends ProductState {
   @override
   List<Object?> get props => [];
 }
 
-class LoadedState extends ProductState {
+class LoadedProductState extends ProductState {
   Products products;
-  LoadedState(this.products);
+  LoadedProductState(this.products);
 
   @override
   List<Object?> get props => [products];
 }
 
-class FailedToLoadState extends ProductState {
+class ErrorProductState extends ProductState {
   String error;
-  FailedToLoadState(this.error);
+  ErrorProductState(this.error);
 
   @override
   List<Object?> get props => [error];

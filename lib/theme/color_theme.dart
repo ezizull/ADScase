@@ -12,7 +12,8 @@ class ColorTheme {
   static Color white = HexColor('ffffff');
   static Color black = HexColor('010101');
   static Color gray = HexColor('B7B7B8');
-  static Color silver = HexColor('f3f3f4');
+  static Color silver = HexColor('c7c8ca');
+  static Color ligth_silver = HexColor('f3f3f4');
   static Color dark_silver = HexColor('808080');
 
   /* Red Color */

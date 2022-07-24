@@ -1,6 +1,6 @@
 import 'package:adscase/bloc/navbar/navbar_cubit.dart';
 import 'package:adscase/bloc/products/product_bloc.dart';
-import 'package:adscase/data/repositories/dio_client.dart';
+import 'package:adscase/data/repositories/dio_repository.dart';
 import 'package:adscase/router/app_router.dart';
 import 'package:adscase/screens/root_screen.dart';
 import 'package:adscase/theme/theme_style.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           BlocProvider(
             create: (context) => ProductBloc(
               RepositoryProvider.of<DioRepository>(context),
-            )..add(LoadEvent()),
+            )..add(LoadProductEvent()),
           ),
         ],
         child: MaterialApp(

@@ -2,7 +2,7 @@
 import 'package:adscase/screens/components/navbar/navbar_button.dart';
 // cubit
 import 'package:adscase/bloc/navbar/navbar_cubit.dart';
-import 'package:adscase/data/repositories/dio_client.dart';
+import 'package:adscase/data/repositories/dio_repository.dart';
 import 'package:adscase/theme/avatar_theme.dart';
 
 // dependencies
