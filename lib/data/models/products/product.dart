@@ -1,4 +1,4 @@
-import 'package:adscase/models/products/category.dart';
+import 'package:adscase/data/models/products/category.dart';
 
 // product entity
 class Product {

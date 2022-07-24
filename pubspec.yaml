@@ -38,6 +38,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  # for compare object   
+  equatable: ^2.0.3
   # Dio fecthing
   dio: ^4.0.6
   # Color with Hex

@@ -1,4 +1,4 @@
-import 'package:adscase/models/products/product.dart';
+import 'package:adscase/data/models/products/product.dart';
 
 // products entity to get all product
 class Products {

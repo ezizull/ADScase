@@ -1,5 +1,5 @@
 // cubit
-import 'package:adscase/cubit/navbar/navbar_cubit.dart';
+import 'package:adscase/bloc/navbar/navbar_cubit.dart';
 
 // dependencies
 import 'package:adscase/screens/components/navbar/navbar.dart';

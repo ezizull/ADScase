@@ -1,4 +1,4 @@
-import 'package:adscase/models/users/geolocation.dart';
+import 'package:adscase/data/models/users/geolocation.dart';
 
 // address of user
 class Address {

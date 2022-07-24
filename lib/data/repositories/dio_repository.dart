@@ -1,10 +1,10 @@
-import 'package:adscase/models/carts/carts.dart';
-import 'package:adscase/models/products/products.dart';
-import 'package:adscase/models/users/user.dart';
+import 'package:adscase/data/models/carts/carts.dart';
+import 'package:adscase/data/models/products/products.dart';
+import 'package:adscase/data/models/users/user.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/rendering.dart';
 
-class DioClient {
+class DioRepository {
   final Dio dio = Dio();
 
   static const baseURL = "https://fakestoreapi.com"; // initial url

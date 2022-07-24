@@ -1,4 +1,4 @@
-import 'package:adscase/models/carts/cart_list.dart';
+import 'package:adscase/data/models/carts/cart_list.dart';
 
 // a chart entity
 class Cart {

@@ -1,4 +1,4 @@
-import 'package:adscase/models/carts/cart.dart';
+import 'package:adscase/data/models/carts/cart.dart';
 
 // all of chart
 class Carts {

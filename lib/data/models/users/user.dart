@@ -1,5 +1,5 @@
-import 'package:adscase/models/users/address.dart';
-import 'package:adscase/models/users/name.dart';
+import 'package:adscase/data/models/users/address.dart';
+import 'package:adscase/data/models/users/name.dart';
 
 // user entity
 class User {

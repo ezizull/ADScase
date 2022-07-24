@@ -1,12 +1,16 @@
 /* components */
+import 'package:adscase/bloc/products/product_bloc.dart';
 import 'package:adscase/screens/components/home/home_notif.dart';
 import 'package:adscase/screens/components/home/home_search.dart';
 
-/* dependencies */
+/* themes */
 import 'package:adscase/theme/color_theme.dart';
+
+/* dependencies */
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 
-// show products, categories, search, notify, banner
+/* show products, categories, search, notify, banner */
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -34,6 +38,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 HomeSearch(height: sheight, width: swidth / 1.38),
                 HomeNotif(sheight: sheight)
               ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.zero,
+            child: BlocBuilder<ProductBloc, ProductState>(
+              builder: (context, state) {
+                debugPrint(state.toString());
+                return Text(state.toString());
+              },
             ),
           ),
           Container(
