@@ -1,19 +1,16 @@
 import 'package:adscase/cubit/counter/counter_cubit.dart';
 import 'package:adscase/screens/home_screen.dart';
+import 'package:adscase/theme/theme_style.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
-
-  // if want to change theme
-  final ThemeData light = ThemeData.light();
-  final ThemeData dark = ThemeData.dark();
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +21,8 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        theme: ThemeStyle.light,
         debugShowCheckedModeBanner: false,
-        theme: light,
         home: const HomeScreen(),
       ),
     );

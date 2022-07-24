@@ -14,7 +14,7 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => BlocProvider.value(
             value: _counterCubit,
-            child: HomeScreen(),
+            child: const HomeScreen(),
           ),
         );
       case '/detail':
