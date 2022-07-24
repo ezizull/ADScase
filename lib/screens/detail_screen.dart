@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DetailScreen extends StatefulWidget {
-  DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key}) : super(key: key);
 
   @override
   State<DetailScreen> createState() => _DetailScreenState();
@@ -13,11 +13,11 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
+    return Scaffold(
+      body: Center(
         child: BlocBuilder<CounterCubit, CounterState>(
           builder: (context, state) {
-            return ContainerComp(data: state);
+            return Text(state.counterValue.toString());
           },
         ),
       ),

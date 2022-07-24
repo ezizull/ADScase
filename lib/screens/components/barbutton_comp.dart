@@ -1,13 +1,13 @@
-import 'package:adscase/theme/color_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:adscase/theme/color_theme.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 // ignore: must_be_immutable
-class ButtonComp extends StatelessWidget {
+class BarButtonComp extends StatelessWidget {
   Function onPressed;
-  String iconTheme;
+  String? iconTheme;
 
-  ButtonComp(
+  BarButtonComp(
     this.iconTheme, {
     Key? key,
     required this.onPressed,
@@ -18,7 +18,10 @@ class ButtonComp extends StatelessWidget {
     double sheight = MediaQuery.of(context).size.height;
 
     return IconButton(
-      onPressed: onPressed(),
+      onPressed: () {
+        // action of bottom bar
+        onPressed();
+      },
       icon: SizedBox(
         height: sheight / 32,
         child: SvgPicture.asset(
