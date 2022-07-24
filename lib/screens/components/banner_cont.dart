@@ -3,10 +3,10 @@ import 'package:adscase/theme/font_theme.dart';
 import 'package:flutter/cupertino.dart';
 
 /* custom container for app */
-class ContainerComp extends StatelessWidget {
+class BannerCont extends StatelessWidget {
   final dynamic data;
 
-  const ContainerComp({
+  const BannerCont({
     required this.data,
     Key? key,
   }) : super(key: key);

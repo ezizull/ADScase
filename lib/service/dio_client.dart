@@ -1,5 +1,4 @@
 import 'package:adscase/models/carts/carts.dart';
-import 'package:adscase/models/products/product.dart';
 import 'package:adscase/models/products/products.dart';
 import 'package:adscase/models/users/user.dart';
 import 'package:dio/dio.dart';

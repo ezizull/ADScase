@@ -1,13 +1,14 @@
-import 'package:flutter/material.dart';
 import 'package:adscase/theme/color_theme.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import 'package:flutter/material.dart';
+
 // ignore: must_be_immutable
-class BarButtonComp extends StatelessWidget {
+class NavbarBtn extends StatelessWidget {
   Function onPressed;
   String? iconTheme;
 
-  BarButtonComp(
+  NavbarBtn(
     this.iconTheme, {
     Key? key,
     required this.onPressed,

@@ -11,7 +11,7 @@ class AppRouter {
         );
       case '/detail':
         return MaterialPageRoute(
-          builder: (_) => DetailScreen(),
+          builder: (_) => const DetailScreen(),
         );
       default:
         return null;

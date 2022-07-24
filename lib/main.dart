@@ -1,6 +1,6 @@
-import 'package:adscase/cubit/counter/counter_cubit.dart';
+import 'package:adscase/cubit/navbar/navbar_cubit.dart';
 import 'package:adscase/router/app_router.dart';
-import 'package:adscase/screens/home_screen.dart';
+import 'package:adscase/screens/root_screen.dart';
 import 'package:adscase/theme/theme_style.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,13 +21,13 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => CounterCubit(),
+          create: (context) => NavbarCubit(),
         ),
       ],
       child: MaterialApp(
         theme: ThemeStyle.light,
         debugShowCheckedModeBanner: false,
-        home: const HomeScreen(),
+        home: const RootScreen(),
         onGenerateRoute: _appRouter.onGenerateRoute,
       ),
     );
