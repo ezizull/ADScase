@@ -3,7 +3,7 @@ import 'package:adscase/theme/font_theme.dart';
 import 'package:flutter/cupertino.dart';
 
 class HomeCategory extends StatelessWidget {
-  const HomeCategory({
+  HomeCategory({
     Key? key,
     required this.height,
     required this.width,
@@ -11,6 +11,8 @@ class HomeCategory extends StatelessWidget {
 
   final double height;
   final double width;
+
+  final categories = [];
 
   @override
   Widget build(BuildContext context) {
